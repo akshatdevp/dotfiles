@@ -16,6 +16,7 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fr <cmd>Telescope oldfiles<cr>
 
 inoremap jk <esc>
 inoremap <Up> <esc>:bn<return>
@@ -36,6 +37,7 @@ nnoremap  <leader>go          <Cmd>lua vim.lsp.buf.type_definition()<CR>
 nnoremap  <leader>gi          <Cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap  <leader>gD          <Cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap  <leader>gd          <Cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap  <leader>r 	      <Cmd>lua vim.lsp.buf.rename()<CR>
 ]]
 )
 
