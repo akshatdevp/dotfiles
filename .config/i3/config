@@ -184,7 +184,12 @@ bar {
         status_command i3status
 }
 
-#bindsym $mod+<F4> exec shutdown --now
 bindsym $mod+b exec firefox
 bindsym $mod+n exec --no-startup-id gnome-terminal -e "nvim"
 bindsym $mod+m exec --no-startup-id gnome-terminal -e "cmus"
+bindsym $mod+Shift+s shutdown now
+
+bindsym $mod+t exec i3-sensible-terminal
+exec --no-startup-id /.screenlayout/default.sh
+exec --no-startup-id nitrogen  --restore
+
