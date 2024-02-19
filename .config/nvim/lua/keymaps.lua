@@ -1,3 +1,4 @@
+
 vim.cmd([[
 
 nnoremap <Up> :bn<return>
@@ -41,3 +42,4 @@ nnoremap  <leader>r 	      <Cmd>lua vim.lsp.buf.rename()<CR>
 ]]
 )
 
+vim.keymap.set('n','<leader>cd', require('utils').explore_current_directory)
