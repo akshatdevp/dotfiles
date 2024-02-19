@@ -173,7 +173,7 @@ exec_always .screenlayout/default.sh
 bindsym $mod+b exec firefox
 bindsym $mod+n exec --no-startup-id gnome-terminal -e "nvim"
 bindsym $mod+m exec --no-startup-id gnome-terminal -e "cmus"
-bindsym $mod+Shift+s gnome-terminal -e "shutdown now"
+bindsym $mod+Shift+s exec gnome-terminal -e "shutdown now"
 
 bindsym $mod+t exec i3-sensible-terminal
 bindsym $mod+x exec --no-startup-id gnome-terminal -e ".screenlayout/monitor_only.sh"
